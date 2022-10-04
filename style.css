@@ -1,0 +1,144 @@
+@font-face {
+	font-family: "LCDMono2";
+	font-style: normal;
+	font-weight: 700;
+	src: local("LCDMono2"), url("img/LCDM2B__.woff") format("woff");
+}
+:root {
+	--r: 275px;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #fff;
+	position: relative;
+}
+img {
+	height: 600px;
+}
+.main {
+	width: 210px;
+	height: 210px;
+	border: 2px solid black;
+	border-radius: 100%;
+	background-image: linear-gradient(to bottom right, #0f0, #015401);
+}
+.main1 {
+	width: calc(2 * var(--r));
+	height: calc(2 * var(--r));
+	border: 6px solid black;
+	border-radius: 100%;
+	/* background-color: transparent; */
+	background-image: radial-gradient(#fff, #bbb);
+}
+.center,
+img {
+	position: absolute;
+	top: 50vh;
+	left: 50vw;
+	transform: translate(-50%, -50%);
+}
+img {
+	transform: translate(-50%, -46.5%);
+}
+p.center,
+.date {
+	text-align: center;
+	font-family: "LCDMono2", sans-serif;
+	color: #afb;
+	font-size: 3.85em;
+	transform: translate(-50%, -25%);
+	border-top: black 3px solid;
+	padding-top: 5px;
+	text-shadow: 0 0 7px black;
+}
+.date {
+	font-size: 2em;
+	border: 0;
+	transform: translate(-50%, -200%);
+}
+#larg {
+	position: absolute;
+	display: block;
+	height: 100vh;
+	width: 100vw;
+	color: red;
+	font-family: "LCDMono2", sans-serif;
+	font-size: 22vw;
+	padding-top: 35vh;
+	padding-left: 4vw;
+}
+a {
+	position: absolute;
+	top: 20vh;
+	left: 50vw;
+	font-family: Arial, Helvetica, sans-serif;
+	transform: translate(-50%, -50%);
+	text-decoration: none;
+	padding: 20px;
+	font-size: 4em;
+	color: rgb(250, 181, 250);
+	background-color: rgb(83, 11, 59);
+	text-align: right;
+	text-shadow: 2px 2px rgb(65, 25, 102);
+	border-radius: 15px;
+}
+#second-hand {
+	position: absolute;
+	border-radius: 50px;
+	width: 6px;
+	height: 300px;
+	background-color: red;
+	top: 10px;
+	left: 272px;
+	transform-origin: 3px 265px;
+}
+#minute-hand {
+	border-radius: 50px;
+	position: absolute;
+	width: 8px;
+	height: 250px;
+	background-color: #0f0;
+	top: 50px;
+	left: 271px;
+	transform-origin: 7px 222px;
+	border-inline: 4px solid black;
+	border-bottom: black 130px solid;
+	border-top: 5px solid black;
+}
+#hour-hand {
+	border-radius: 50px;
+	position: absolute;
+	width: 14px;
+	height: 200px;
+	background-color: #0f0;
+	top: 100px;
+	left: 268px;
+	transform-origin: 10px 172px;
+	border-inline: 6px solid black;
+	border-bottom: black 130px solid;
+	border-top: 5px solid black;
+}
+.minute {
+	width: 20px;
+	height: 20px;
+	background-color: red;
+	border-radius: 100%;
+	top: 275px;
+	left: 275px;
+}
+#date {
+	position: absolute;
+	top: 400px;
+	left: 275px;
+	color: #280154;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	text-shadow: 0 0 3px white;
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	font-size: 2.5em;
+}
